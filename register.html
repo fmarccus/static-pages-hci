@@ -91,7 +91,7 @@
                                                 <h1 class="text-center">HCI 101</h1>
                                             </div>
                                             <div class="col-md-12">
-                                                <img class="card-img" id="register" src="register_img.jpg">
+                                                <img class="card-img" id="register" src="computer.png">
                                             </div>
                                             <div class="col-md-12">
                                                 <p class="text-justify">Human–computer interaction studies the design
@@ -167,7 +167,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </form>
                         </div>
                     </div>
@@ -188,14 +187,15 @@
                 if (username == "" || email == "" || password == "" || confirm == "") {
                     alert("It seems that you have not completed the form.");
                 } else {
-                //ternary operator to shorten the if-else statement for checking if password and confirm password matched
-                    var confirmation_msg = (password == confirm) ? "Hello, " + username + "! Your email is " + email + 
-                    " and your password is " + password + ". Welcome to HCI 101!" : 
-                    "Your password does not match.";
+                    //ternary operator to shorten the if-else statement for checking if password and confirm password matched
+                    var confirmation_msg = (password == confirm) ? "Hello, " + username + "! Your email is " + email +
+                        " and your password is " + password + ". Welcome to HCI 101!" :
+                        "Your password does not match.";
                     alert(confirmation_msg);
                 }
             });
         });
     </script>
 </body>
+
 </html>
