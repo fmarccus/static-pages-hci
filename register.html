@@ -179,16 +179,16 @@
         $(document).ready(function () {
             $("#btnsubmit").click(function () {
                 //variables
-                var username = $("#username").val()
-                var email = $("#email").val()
-                var password = $("#password").val()
-                var confirm = $("#confirm").val();
+                let username = $("#username").val()
+                let email = $("#email").val()
+                let password = $("#password").val()
+                let confirm = $("#confirm").val();
                 //rejects null or incomplete form
                 if (username == "" || email == "" || password == "" || confirm == "") {
                     alert("It seems that you have not completed the form.");
                 } else {
                     //ternary operator to shorten the if-else statement for checking if password and confirm password matched
-                    var confirmation_msg = (password == confirm) ? "Hello, " + username + "! Your email is " + email +
+                    let confirmation_msg = (password == confirm) ? "Hello, " + username + "! Your email is " + email +
                         " and your password is " + password + ". Welcome to HCI 101!" :
                         "Your password does not match.";
                     alert(confirmation_msg);
